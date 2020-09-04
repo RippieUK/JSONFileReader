@@ -6,6 +6,9 @@ public class KeyValuePair : Object {
 }
 
 public class Host : Object, Json.Serializable {
+    // Setting these properties as construct instead of set works around https://gitlab.gnome.org/GNOME/json-glib/-/issues/39
+    // But is obviously inconvenient
+
     public string DisplayName { get; construct; }
     public string Hostname_IP { get; construct; }
     public string Description { get; construct; }
