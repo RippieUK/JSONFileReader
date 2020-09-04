@@ -1,0 +1,36 @@
+{
+    "Hosts": [
+        {
+            "DisplayName": "RPI4",
+            "Hostname_IP": "192.168.1.16",
+            "Description": "My Raspberry Pi 4",
+            "Protocol": "ssh",
+            "Protocol_Options": [
+                {
+                    "Name": "private key",
+                    "Value": "JKHSDFKJHSDFKJHS"
+                }
+            ],
+            "UserName": "pi",
+            "Encrypted_Password": "something"
+        },
+        {
+            "DisplayName": "Desktop",
+            "Hostname_IP": "192.168.1.15",
+            "Description": "My Windows 10 Desktop",
+            "Protocol": "rdp",
+            "Protocol_Options": [
+                {
+                    "Name": "resolution",
+                    "Value": "1920*1080"
+                },
+                {
+                    "Name": "adminmode",
+                    "Value": "false"
+                }
+            ],
+            "UserName": "Rippie",
+            "Encrypted_Password": "something"
+        }
+    ]
+}
